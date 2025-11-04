@@ -2,7 +2,6 @@ library(CytoPipeline)
 
 # raw data
 # Halen we uit de CytoPipeline package
-rawDataDir <- system.file("extdata", package = "CytoPipeline")
 # output files
 workDir <- suppressMessages(base::tempdir())
 
@@ -41,13 +40,13 @@ sampleFile = sampleFiles(pipL_flowAI)[1])
 ## Vistueel met de data werken via shinny app ###
 # handig voor begrijpen wat de pipeline heeft gedaan
 # uncomment om daar te kijken
-#library(CytoPipelineGUI)
-#
-#if (interactive())
-#  CytoPipelineCheckApp(dir = workDir) 
-#
-#if  (interactive())
-#  ScaleTransformApp(dir = workDir)
+
+library(CytoPipelineGUI)
+if (interactive())
+  CytoPipelineCheckApp(dir = workDir) 
+
+if  (interactive())
+  ScaleTransformApp(dir = workDir)
 
 
 ### Vistualiseren van de cytometrie data ###
@@ -73,8 +72,10 @@ path = workDir
 
 # plot de data
 library(gridExtra)
+library(plotly)
 gg_raw <- ggplotEvents(ff_raw, yChannel = "FSC-H", xChannel = "FSC-A") + 
   ggtitle("raw")
 gg_de_douplet <- ggplotEvents(ff_de_douplet, yChannel = "FSC-H", xChannel = "FSC-A") +
   ggtitle("de douplet")
-grid.arrange(gg_raw, gg_de_douplet, ncol = 2)
+gg_grid <- grid.arrange(gg_raw, gg_de_douplet, ncol = 2)
+ggplotly(gg_raw)
