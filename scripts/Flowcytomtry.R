@@ -4,6 +4,8 @@ library(CytoPipeline)
 # output files
 workDir <- suppressMessages(base::tempdir())
 
+rawDataDir <- system.file("extdata", package = "CytoPipeline")
+
 jsonDir <- rawDataDir
 
 # main parameters : sample files and output files
@@ -65,7 +67,7 @@ ff_de_douplet <- getCytoPipelineFlowFrame(
   pipL_flowAI,
 whichQueue = "pre-processing",
 sampleFile = 1,
-objectName = "remove_doublets_obj", #dit komt uit `getCytoPipelineObjectInfos`
+objectName = "remove_dead_cells_obj", #dit komt uit `getCytoPipelineObjectInfos`
 path = workDir
 )
 
@@ -75,6 +77,6 @@ library(plotly)
 gg_raw <- ggplotEvents(ff_raw, yChannel = "FSC-H", xChannel = "FSC-A") + 
   ggtitle("raw")
 gg_de_douplet <- ggplotEvents(ff_de_douplet, yChannel = "FSC-H", xChannel = "FSC-A") +
-  ggtitle("de douplet")
+  ggtitle("processed")
 gg_grid <- grid.arrange(gg_raw, gg_de_douplet, ncol = 2)
 ggplotly(gg_raw)
