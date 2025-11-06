@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.5.1",
+    "Version": "4.5.2",
     "Repositories": [
       {
         "Name": "BioCsoft",
@@ -685,6 +685,34 @@
       "Repository": "CRAN",
       "NeedsCompilation": "no"
     },
+    "IDPmisc": {
+      "Package": "IDPmisc",
+      "Version": "1.1.21",
+      "Source": "Repository",
+      "Type": "Package",
+      "Date": "2024-02-07",
+      "Depends": [
+        "R(>= 3.0.0)"
+      ],
+      "Imports": [
+        "methods",
+        "grid",
+        "lattice"
+      ],
+      "Suggests": [
+        "SwissAir(>= 1.1.3)"
+      ],
+      "Title": "'Utilities of Institute of Data Analyses and Process Design (www.zhaw.ch/idp)'",
+      "Maintainer": "Christoph Hofer <christoph.hofer@zhaw.ch>",
+      "Authors@R": "c(person(\"Christoph\", family = \"Hofer\", role = \"cre\", email = \"christoph.hofer@zhaw.ch\"), person(\"Rene\", family = \"Locher\", role = \"aut\"), person(\"Andreas\", family = \"Ruckstuhl\", role = \"ctb\"))",
+      "Description": "Different high-level graphics functions for displaying large datasets, displaying circular data in a very flexible way, finding local maxima, brewing color ramps, drawing nice arrows, zooming 2D-plots, creating figures with differently colored margin and plot region.  In addition, the package contains auxiliary functions for data manipulation like omitting observations with irregular values or selecting data by logical vectors, which include NAs. Other functions are especially useful in spectroscopy and analyses of environmental data: robust baseline fitting, finding peaks in spectra, converting humidity measures.",
+      "License": "GPL (>= 3)",
+      "ByteCompile": "TRUE",
+      "LazyData": "yes",
+      "NeedsCompilation": "yes",
+      "Author": "Christoph Hofer [cre], Rene Locher [aut], Andreas Ruckstuhl [ctb]",
+      "Repository": "CRAN"
+    },
     "IRanges": {
       "Package": "IRanges",
       "Version": "2.44.0",
@@ -731,6 +759,31 @@
       "NeedsCompilation": "yes",
       "Author": "Hervé Pagès [aut, cre], Patrick Aboyoun [aut], Michael Lawrence [aut]",
       "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>"
+    },
+    "KernSmooth": {
+      "Package": "KernSmooth",
+      "Version": "2.23-26",
+      "Source": "Repository",
+      "Priority": "recommended",
+      "Date": "2024-12-10",
+      "Title": "Functions for Kernel Smoothing Supporting Wand & Jones (1995)",
+      "Authors@R": "c(person(\"Matt\", \"Wand\", role = \"aut\", email = \"Matt.Wand@uts.edu.au\"), person(\"Cleve\", \"Moler\", role = \"ctb\", comment = \"LINPACK routines in src/d*\"), person(\"Brian\", \"Ripley\", role = c(\"trl\", \"cre\", \"ctb\"), email = \"Brian.Ripley@R-project.org\", comment = \"R port and updates\"))",
+      "Note": "Maintainers are not available to give advice on using a package they did not author.",
+      "Depends": [
+        "R (>= 2.5.0)",
+        "stats"
+      ],
+      "Suggests": [
+        "MASS",
+        "carData"
+      ],
+      "Description": "Functions for kernel smoothing (and density estimation) corresponding to the book:  Wand, M.P. and Jones, M.C. (1995) \"Kernel Smoothing\".",
+      "License": "Unlimited",
+      "ByteCompile": "yes",
+      "NeedsCompilation": "yes",
+      "Author": "Matt Wand [aut], Cleve Moler [ctb] (LINPACK routines in src/d*), Brian Ripley [trl, cre, ctb] (R port and updates)",
+      "Maintainer": "Brian Ripley <Brian.Ripley@R-project.org>",
+      "Repository": "CRAN"
     },
     "MASS": {
       "Package": "MASS",
@@ -1400,7 +1453,7 @@
     },
     "SparseArray": {
       "Package": "SparseArray",
-      "Version": "1.10.0",
+      "Version": "1.10.1",
       "Source": "Bioconductor",
       "Title": "High-performance sparse data representation and manipulation in R",
       "Description": "The SparseArray package provides array-like containers for efficient in-memory representation of multidimensional sparse data in R (arrays and matrices). The package defines the SparseArray virtual class and two concrete subclasses: COO_SparseArray and SVT_SparseArray. Each subclass uses its own internal representation of the nonzero multidimensional data: the \"COO layout\" and the \"SVT layout\", respectively. SVT_SparseArray objects mimic as much as possible the behavior of ordinary matrix and array objects in base R. In particular, they suppport most of the \"standard matrix and array API\" defined in base R and in the matrixStats package from CRAN.",
@@ -1443,8 +1496,8 @@
       "Collate": "utils.R options.R OPBufTree.R thread-control.R sparseMatrix-utils.R is_nonzero.R SparseArray-class.R COO_SparseArray-class.R SVT_SparseArray-class.R extract_sparse_array.R read_block_as_sparse.R SparseArray-dim-tuning.R SparseArray-aperm.R SparseArray-subsetting.R SparseArray-subassignment.R SparseArray-abind.R SparseArray-summarization.R SparseArray-Arith-methods.R SparseArray-Compare-methods.R SparseArray-Logic-methods.R SparseArray-Math-methods.R SparseArray-Complex-methods.R SparseArray-misc-methods.R SparseArray-matrixStats.R rowsum-methods.R SparseMatrix-mult.R randomSparseArray.R readSparseCSV.R is_nonna.R NaArray-class.R NaArray-aperm.R NaArray-subsetting.R NaArray-subassignment.R NaArray-abind.R NaArray-summarization.R NaArray-Arith-methods.R NaArray-Compare-methods.R NaArray-Logic-methods.R NaArray-Math-methods.R NaArray-misc-methods.R NaArray-matrixStats.R zzz.R",
       "git_url": "https://git.bioconductor.org/packages/SparseArray",
       "git_branch": "RELEASE_3_22",
-      "git_last_commit": "b793c60",
-      "git_last_commit_date": "2025-10-29",
+      "git_last_commit": "b457b3d",
+      "git_last_commit_date": "2025-10-31",
       "Repository": "Bioconductor 3.22",
       "NeedsCompilation": "yes",
       "Author": "Hervé Pagès [aut, cre] (ORCID: <https://orcid.org/0009-0002-8272-4522>), Vince Carey [fnd] (ORCID: <https://orcid.org/0000-0003-4046-0063>), Rafael A. Irizarry [fnd] (ORCID: <https://orcid.org/0000-0002-3944-4309>), Jacques Serizay [ctb] (ORCID: <https://orcid.org/0000-0002-4295-0624>)",
@@ -2577,6 +2630,51 @@
       "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
       "Repository": "CRAN"
     },
+    "cytoRSuite": {
+      "Package": "cytoRSuite",
+      "Version": "0.9.5",
+      "Source": "GitHub",
+      "Type": "Package",
+      "Title": "Compensation, Gating & Visualisation Toolkit for Analysis of Flow Cytometry Data",
+      "Author": "Dillon Hammill <Dillon.Hammill@anu.edu.au>",
+      "Maintainer": "Dillon Hammill <Dillon.Hammill@anu.edu.au>",
+      "Description": "Compensation, Gating & Visualisation Toolkit for Analysis of Flow Cytometry Data.",
+      "Depends": [
+        "openCyto(>= 1.19.1)",
+        "flowWorkspace (>= 3.28.2)",
+        "flowCore (>= 1.46.2)"
+      ],
+      "Imports": [
+        "data.table(>= 1.11.4)",
+        "BiocGenerics",
+        "shiny(>= 1.1.0)",
+        "shinythemes(>= 1.1.1)",
+        "rhandsontable(>= 0.3.6.1)",
+        "MASS (>= 7.3-50)",
+        "methods",
+        "stats",
+        "utils",
+        "graphics",
+        "grDevices",
+        "magrittr"
+      ],
+      "License": "GPL-2",
+      "Encoding": "UTF-8",
+      "LazyData": "true",
+      "RoxygenNote": "6.1.0",
+      "Suggests": [
+        "knitr",
+        "rmarkdown"
+      ],
+      "VignetteBuilder": "knitr",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "cytoRSuite",
+      "RemoteUsername": "gfinak",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "03ad4c8bcf216ec178e8bfecfe814d82c90b7447",
+      "NeedsCompilation": "no"
+    },
     "cytolib": {
       "Package": "cytolib",
       "Version": "2.22.0",
@@ -2710,6 +2808,31 @@
       "NeedsCompilation": "no",
       "Author": "Hadley Wickham [aut, cre], Maximilian Girlich [aut], Edgar Ruiz [aut], Posit Software, PBC [cph, fnd]",
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
+      "Repository": "CRAN"
+    },
+    "deldir": {
+      "Package": "deldir",
+      "Version": "2.0-4",
+      "Source": "Repository",
+      "Date": "2024-02-27",
+      "Title": "Delaunay Triangulation and Dirichlet (Voronoi) Tessellation",
+      "Author": "Rolf Turner",
+      "Maintainer": "Rolf Turner <rolfturner@posteo.net>",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Suggests": [
+        "polyclip"
+      ],
+      "Imports": [
+        "graphics",
+        "grDevices"
+      ],
+      "Description": "Calculates the Delaunay triangulation and the Dirichlet or Voronoi tessellation (with respect to the entire plane) of a planar point set. Plots triangulations and tessellations in various ways.  Clips tessellations to sub-windows. Calculates perimeters of tessellations.  Summarises information about the tiles of the tessellation.\tCalculates the centroidal Voronoi (Dirichlet) tessellation using Lloyd's algorithm.",
+      "LazyData": "true",
+      "ByteCompile": "true",
+      "License": "GPL (>= 2)",
+      "NeedsCompilation": "yes",
       "Repository": "CRAN"
     },
     "diagram": {
@@ -3084,6 +3207,49 @@
       "git_last_commit_date": "2025-10-29",
       "Repository": "Bioconductor 3.22"
     },
+    "flowClust": {
+      "Package": "flowClust",
+      "Version": "3.48.0",
+      "Source": "Bioconductor",
+      "Type": "Package",
+      "Title": "Clustering for Flow Cytometry",
+      "Author": "Raphael Gottardo, Kenneth Lo <c.lo@stat.ubc.ca>, Greg Finak <greg@ozette.ai>",
+      "Maintainer": "Greg Finak <greg@ozette.ai>, Mike Jiang <mike@ozette.ai>",
+      "Depends": [
+        "R(>= 2.5.0)"
+      ],
+      "Imports": [
+        "BiocGenerics",
+        "methods",
+        "Biobase",
+        "graph",
+        "flowCore",
+        "parallel"
+      ],
+      "Suggests": [
+        "testthat",
+        "flowWorkspace",
+        "flowWorkspaceData",
+        "knitr",
+        "rmarkdown",
+        "openCyto",
+        "flowStats(>= 4.7.1)"
+      ],
+      "Description": "Robust model-based clustering using a t-mixture model with Box-Cox transformation. Note: users should have GSL installed. Windows users: 'consult the README file available in the inst directory of the source distribution for necessary configuration instructions'.",
+      "Collate": "'SetClasses.R' 'SetMethods.R' 'flowClust.R' 'coerce.R' 'flowClust-package.R' 'hist.R' 'miscellaneous.R' 'plot.R' 'split.R'",
+      "License": "MIT",
+      "biocViews": "ImmunoOncology, Clustering, Visualization, FlowCytometry",
+      "SystemRequirements": "GNU make",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.1.1",
+      "VignetteBuilder": "knitr",
+      "git_url": "https://git.bioconductor.org/packages/flowClust",
+      "git_branch": "RELEASE_3_22",
+      "git_last_commit": "b1ac58b",
+      "git_last_commit_date": "2025-10-29",
+      "Repository": "Bioconductor 3.22",
+      "NeedsCompilation": "yes"
+    },
     "flowCore": {
       "Package": "flowCore",
       "Version": "2.22.0",
@@ -3141,6 +3307,57 @@
       "Repository": "Bioconductor 3.22",
       "NeedsCompilation": "yes",
       "Author": "B Ellis [aut], Perry Haaland [aut], Florian Hahne [aut], Nolwenn Le Meur [aut], Nishant Gopalakrishnan [aut], Josef Spidlen [aut], Mike Jiang [aut, cre], Greg Finak [aut], Samuel Granjeaud [ctb]"
+    },
+    "flowViz": {
+      "Package": "flowViz",
+      "Version": "1.74.0",
+      "Source": "Bioconductor",
+      "Type": "Package",
+      "Title": "Visualization for flow cytometry",
+      "Author": "B. Ellis, R. Gentleman, F. Hahne, N. Le Meur, D. Sarkar, M. Jiang",
+      "Maintainer": "Mike Jiang <mike@ozette.com>",
+      "Description": "Provides visualization tools for flow cytometry data.",
+      "Depends": [
+        "R (>= 2.7.0)",
+        "flowCore(>= 1.41.9)",
+        "lattice"
+      ],
+      "Imports": [
+        "stats4",
+        "Biobase",
+        "flowCore",
+        "graphics",
+        "grDevices",
+        "grid",
+        "KernSmooth",
+        "lattice",
+        "latticeExtra",
+        "MASS",
+        "methods",
+        "RColorBrewer",
+        "stats",
+        "utils",
+        "hexbin",
+        "IDPmisc"
+      ],
+      "Suggests": [
+        "colorspace",
+        "flowStats",
+        "knitr",
+        "rmarkdown",
+        "markdown",
+        "testthat"
+      ],
+      "License": "Artistic-2.0",
+      "biocViews": "ImmunoOncology, Infrastructure, FlowCytometry, CellBasedAssays, Visualization",
+      "VignetteBuilder": "knitr",
+      "RoxygenNote": "6.1.1",
+      "git_url": "https://git.bioconductor.org/packages/flowViz",
+      "git_branch": "RELEASE_3_22",
+      "git_last_commit": "e737e04",
+      "git_last_commit_date": "2025-10-29",
+      "Repository": "Bioconductor 3.22",
+      "NeedsCompilation": "no"
     },
     "flowWorkspace": {
       "Package": "flowWorkspace",
@@ -4024,6 +4241,47 @@
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
       "Repository": "CRAN"
     },
+    "interp": {
+      "Package": "interp",
+      "Version": "1.1-6",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Interpolation Methods",
+      "Date": "2024-01-26",
+      "Authors@R": "c(person(\"Albrecht\", \"Gebhardt\", role = c(\"aut\", \"cre\", \"cph\"), email = \"albrecht.gebhardt@aau.at\"), person(\"Roger\", \"Bivand\", role = c(\"aut\"), email = \"Roger.Bivand@nhh.no\"), person(\"David\", \"Sinclair\", role = c(\"aut\",\"cph\"), email = \"david@s-hull.org\", comment = \"author of the shull library\"))",
+      "Maintainer": "Albrecht Gebhardt <albrecht.gebhardt@aau.at>",
+      "Description": "Bivariate data interpolation on regular and irregular grids, either linear or using splines are the main part of this package.  It is intended to provide FOSS replacement functions for the ACM licensed akima::interp and tripack::tri.mesh functions. Linear interpolation is implemented in  interp::interp(..., method=\"linear\"), this corresponds to the call  akima::interp(..., linear=TRUE) which is the default setting and  covers most of akima::interp use cases in depending packages.   A re-implementation of Akimas irregular grid spline interpolation (akima::interp(..., linear=FALSE)) is now also available via interp::interp(..., method=\"akima\"). Estimators for partial derivatives are now also available in  interp::locpoly(), these are a prerequisite for the spline interpolation.   The basic part is a GPLed triangulation algorithm (sweep hull  algorithm by David Sinclair) providing the starting point for the irregular grid interpolator. As side effect this algorithm is also used to provide replacements for almost all functions of the tripack package which also suffers from the same ACM license restrictions.   All functions are designed to be backward compatible with their  akima / tripack counterparts.",
+      "License": "GPL (>= 2)",
+      "Imports": [
+        "Rcpp (>= 0.12.9)",
+        "deldir"
+      ],
+      "Suggests": [
+        "sp",
+        "Deriv",
+        "Ryacas",
+        "ggplot2",
+        "gridExtra",
+        "lattice",
+        "stringi",
+        "stringr",
+        "scatterplot3d",
+        "MASS"
+      ],
+      "Enhances": [
+        "RcppEigen"
+      ],
+      "LinkingTo": [
+        "Rcpp",
+        "RcppEigen"
+      ],
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "NeedsCompilation": "yes",
+      "Author": "Albrecht Gebhardt [aut, cre, cph], Roger Bivand [aut], David Sinclair [aut, cph] (author of the shull library)",
+      "Repository": "CRAN"
+    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.2.7",
@@ -4081,6 +4339,25 @@
       "NeedsCompilation": "no",
       "Author": "Folashade Daniel [cre], Revolution Analytics [aut, cph], Steve Weston [aut]",
       "Maintainer": "Folashade Daniel <fdaniel@microsoft.com>",
+      "Repository": "CRAN"
+    },
+    "jpeg": {
+      "Package": "jpeg",
+      "Version": "0.1-11",
+      "Source": "Repository",
+      "Title": "Read and write JPEG images",
+      "Author": "Simon Urbanek [aut, cre, cph] (https://urbanek.org, <https://orcid.org/0000-0003-2297-1732>)",
+      "Authors@R": "person(\"Simon\", \"Urbanek\", role=c(\"aut\",\"cre\",\"cph\"), email=\"Simon.Urbanek@r-project.org\", comment=c(\"https://urbanek.org\", ORCID=\"0000-0003-2297-1732\"))",
+      "Maintainer": "Simon Urbanek <Simon.Urbanek@r-project.org>",
+      "Depends": [
+        "R (>= 2.9.0)"
+      ],
+      "Description": "This package provides an easy and simple way to read, write and display bitmap images stored in the JPEG format. It can read and write both files and in-memory raw vectors.",
+      "License": "GPL-2 | GPL-3",
+      "SystemRequirements": "libjpeg",
+      "URL": "https://www.rforge.net/jpeg/",
+      "BugReports": "https://github.com/s-u/jpeg/issues",
+      "NeedsCompilation": "yes",
       "Repository": "CRAN"
     },
     "jquerylib": {
@@ -4314,6 +4591,47 @@
       "NeedsCompilation": "yes",
       "Author": "Deepayan Sarkar [aut, cre] (<https://orcid.org/0000-0003-4107-1553>), Felix Andrews [ctb], Kevin Wright [ctb] (documentation), Neil Klepeis [ctb], Johan Larsson [ctb] (miscellaneous improvements), Zhijian (Jason) Wen [cph] (filled contour code), Paul Murrell [ctb], Stefan Eng [ctb] (violin plot improvements), Achim Zeileis [ctb] (modern colors), Alexandre Courtiol [ctb] (generics for larrows, lpolygon, lrect and lsegments)",
       "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
+      "Repository": "CRAN"
+    },
+    "latticeExtra": {
+      "Package": "latticeExtra",
+      "Version": "0.6-31",
+      "Source": "Repository",
+      "Date": "2025-09-08",
+      "Title": "Extra Graphical Utilities Based on Lattice",
+      "Authors@R": "c(person(\"Deepayan\", \"Sarkar\", role = c(\"aut\", \"cre\"), email = \"deepayan.sarkar@r-project.org\", comment = c(ORCID = \"0000-0003-4107-1553\")), person(\"Felix\", \"Andrews\", role = \"aut\", email = \"felix@nfrac.org\"))",
+      "Author": "Deepayan Sarkar [aut, cre] (ORCID: <https://orcid.org/0000-0003-4107-1553>), Felix Andrews [aut]",
+      "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
+      "Description": "Building on the infrastructure provided by the lattice package, this package provides several new high-level functions and methods, as well as additional utilities such as panel and axis annotation functions.",
+      "Depends": [
+        "R (>= 3.6.0)",
+        "lattice"
+      ],
+      "Imports": [
+        "grid",
+        "stats",
+        "utils",
+        "grDevices",
+        "png",
+        "jpeg",
+        "RColorBrewer",
+        "interp",
+        "MASS"
+      ],
+      "Suggests": [
+        "maps",
+        "mapproj",
+        "deldir",
+        "quantreg",
+        "zoo",
+        "mgcv"
+      ],
+      "URL": "http://latticeextra.r-forge.r-project.org/",
+      "BugReports": "https://github.com/deepayan/latticeExtra/issues",
+      "LazyLoad": "yes",
+      "LazyData": "yes",
+      "License": "GPL (>= 2)",
+      "NeedsCompilation": "no",
       "Repository": "CRAN"
     },
     "lazyeval": {
@@ -4901,6 +5219,65 @@
       "URL": "http://optimizer.r-forge.r-project.org/",
       "NeedsCompilation": "no",
       "Repository": "CRAN"
+    },
+    "openCyto": {
+      "Package": "openCyto",
+      "Version": "2.22.0",
+      "Source": "Bioconductor",
+      "Type": "Package",
+      "Title": "Hierarchical Gating Pipeline for flow cytometry data",
+      "Date": "2012-06-11",
+      "Author": "Mike Jiang, John Ramey, Greg Finak, Raphael Gottardo",
+      "Maintainer": "Mike Jiang <mike@ozette.com>",
+      "Description": "This package is designed to facilitate the automated gating methods in sequential way to mimic the manual gating strategy.",
+      "License": "AGPL-3.0-only",
+      "LazyLoad": "yes",
+      "Imports": [
+        "methods",
+        "Biobase",
+        "BiocGenerics",
+        "flowCore(>= 1.99.17)",
+        "flowViz",
+        "ncdfFlow(>= 2.11.34)",
+        "flowWorkspace(>= 3.99.1)",
+        "flowClust(>= 3.11.4)",
+        "RBGL",
+        "graph",
+        "data.table",
+        "RColorBrewer",
+        "grDevices"
+      ],
+      "Suggests": [
+        "flowWorkspaceData",
+        "knitr",
+        "rmarkdown",
+        "markdown",
+        "testthat",
+        "utils",
+        "tools",
+        "parallel",
+        "ggcyto",
+        "CytoML",
+        "flowStats(>= 4.5.2)",
+        "MASS"
+      ],
+      "biocViews": "ImmunoOncology, FlowCytometry, DataImport, Preprocessing, DataRepresentation",
+      "Encoding": "UTF-8",
+      "VignetteBuilder": "knitr",
+      "RoxygenNote": "7.3.2",
+      "LinkingTo": [
+        "cpp11",
+        "BH(>= 1.62.0-1)"
+      ],
+      "git_url": "https://git.bioconductor.org/packages/openCyto",
+      "git_branch": "RELEASE_3_22",
+      "git_last_commit": "bbeacaf",
+      "git_last_commit_date": "2025-10-29",
+      "Repository": "Bioconductor 3.22",
+      "NeedsCompilation": "yes",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ]
     },
     "openssl": {
       "Package": "openssl",
@@ -5572,6 +5949,40 @@
       "NeedsCompilation": "yes",
       "Repository": "CRAN"
     },
+    "rhandsontable": {
+      "Package": "rhandsontable",
+      "Version": "0.3.8",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Interface to the 'Handsontable.js' Library",
+      "Authors@R": "c( person(\"Jonathan\", \"Owen\", email = \"jonathanro@gmail.com\", role = c(\"aut\", \"cre\", \"cph\")), person(\"Jeff\", \"Allen\", role = c(\"ctb\")), person(\"Yihui\", \"Xie\", role = c(\"ctb\")), person(\"Enzo\", \"Martoglio\", email = \"enzo@smartinsightsfromdata.com\", role = c(\"ctb\")), person(\"Inberg\", \"Ger\", role = c(\"ctb\")), person(\"Warpechowski\", \"Marcin\", role = c(\"ctb\", \"cph\"), comment = \"Handsontable.js library\"), person(\"Handsoncode sp. z o.o.\", role = c(\"ctb\", \"cph\"), comment = \"Handsontable.js library\"), person(\"Aisch\", \"Gregor\", role = c(\"ctb\", \"cph\"), comment = \"Chroma.js library\"), person(\"Företagsplatsen\", role = c(\"ctb\", \"cph\"), comment = \"Numbro.js library\"), person(\"Draper\", \"Adam\", role = c(\"ctb\", \"cph\"), comment = \"Numeral.js library\"), person(\"Wood\", \"Tim\", role = c(\"ctb\", \"cph\"), comment = \"Moment.js library\"), person(\"Chernev\", \"Iskren\", role = c(\"ctb\", \"cph\"), comment = \"Moment.js library\"), person(\"Moment.js contributors\", role = c(\"ctb\", \"cph\"), comment = \"Moment.js library\"), person(\"Bushell\", \"David\", role = c(\"ctb\", \"cph\"), comment = \"Pikaday.js library\"), person(\"jQuery Foundation\", role = c(\"ctb\", \"cph\"), comment = \"jQuery.js library\"), person(\"Splunk Inc\", role = c(\"ctb\", \"cph\"), comment = \"Sparkline.js library\"), person(\"Russell\", \"Kent\", role = c(\"ctb\", \"cph\"), comment = \"Sparkline.js library\"), person(\"Rohan\", \"Jon\", role = c(\"ctb\", \"cph\"), comment = \"ZeroClipboard library\"), person(\"Greene\", \"James\", role = c(\"ctb\", \"cph\"), comment = \"ZeroClipboard library\"), person(\"Hammill\", \"Dillon\", role = c(\"ctb\")))",
+      "Maintainer": "Jonathan Owen <jonathanro@gmail.com>",
+      "Description": "An R interface to the 'Handsontable' JavaScript library, which is a minimalist Excel-like data grid editor.  See <https://handsontable.com/> for details.",
+      "License": "MIT + file LICENSE",
+      "URL": "http://jrowen.github.io/rhandsontable/",
+      "BugReports": "https://github.com/jrowen/rhandsontable/issues",
+      "Imports": [
+        "jsonlite",
+        "htmlwidgets (>= 0.3.3)",
+        "magrittr",
+        "methods",
+        "utils"
+      ],
+      "Suggests": [
+        "knitr",
+        "rmarkdown",
+        "shiny (>= 0.13)",
+        "miniUI (>= 0.1.1)",
+        "rstudioapi (>= 0.6)",
+        "htmltools"
+      ],
+      "VignetteBuilder": "knitr",
+      "RoxygenNote": "7.1.1",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Author": "Jonathan Owen [aut, cre, cph], Jeff Allen [ctb], Yihui Xie [ctb], Enzo Martoglio [ctb], Inberg Ger [ctb], Warpechowski Marcin [ctb, cph] (Handsontable.js library), Handsoncode sp. z o.o. [ctb, cph] (Handsontable.js library), Aisch Gregor [ctb, cph] (Chroma.js library), Företagsplatsen [ctb, cph] (Numbro.js library), Draper Adam [ctb, cph] (Numeral.js library), Wood Tim [ctb, cph] (Moment.js library), Chernev Iskren [ctb, cph] (Moment.js library), Moment.js contributors [ctb, cph] (Moment.js library), Bushell David [ctb, cph] (Pikaday.js library), jQuery Foundation [ctb, cph] (jQuery.js library), Splunk Inc [ctb, cph] (Sparkline.js library), Russell Kent [ctb, cph] (Sparkline.js library), Rohan Jon [ctb, cph] (ZeroClipboard library), Greene James [ctb, cph] (ZeroClipboard library), Hammill Dillon [ctb]",
+      "Repository": "CRAN"
+    },
     "rjson": {
       "Package": "rjson",
       "Version": "0.2.23",
@@ -5906,6 +6317,27 @@
       "NeedsCompilation": "no",
       "Author": "Winston Chang [aut, cre] (ORCID: <https://orcid.org/0000-0002-1576-2126>), Joe Cheng [aut], JJ Allaire [aut], Carson Sievert [aut] (ORCID: <https://orcid.org/0000-0002-4958-2844>), Barret Schloerke [aut] (ORCID: <https://orcid.org/0000-0001-9986-114X>), Yihui Xie [aut], Jeff Allen [aut], Jonathan McPherson [aut], Alan Dipert [aut], Barbara Borges [aut], Posit Software, PBC [cph, fnd], jQuery Foundation [cph] (jQuery library and jQuery UI library), jQuery contributors [ctb, cph] (jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt), jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in inst/www/shared/jqueryui/AUTHORS.txt), Mark Otto [ctb] (Bootstrap library), Jacob Thornton [ctb] (Bootstrap library), Bootstrap contributors [ctb] (Bootstrap library), Twitter, Inc [cph] (Bootstrap library), Prem Nawaz Khan [ctb] (Bootstrap accessibility plugin), Victor Tsaran [ctb] (Bootstrap accessibility plugin), Dennis Lembree [ctb] (Bootstrap accessibility plugin), Srinivasu Chakravarthula [ctb] (Bootstrap accessibility plugin), Cathy O'Connor [ctb] (Bootstrap accessibility plugin), PayPal, Inc [cph] (Bootstrap accessibility plugin), Stefan Petre [ctb, cph] (Bootstrap-datepicker library), Andrew Rowls [ctb, cph] (Bootstrap-datepicker library), Brian Reavis [ctb, cph] (selectize.js library), Salmen Bejaoui [ctb, cph] (selectize-plugin-a11y library), Denis Ineshin [ctb, cph] (ion.rangeSlider library), Sami Samhuri [ctb, cph] (Javascript strftime library), SpryMedia Limited [ctb, cph] (DataTables library), John Fraser [ctb, cph] (showdown.js library), John Gruber [ctb, cph] (showdown.js library), Ivan Sagalaev [ctb, cph] (highlight.js library), R Core Team [ctb, cph] (tar implementation from R)",
       "Maintainer": "Winston Chang <winston@posit.co>",
+      "Repository": "CRAN"
+    },
+    "shinythemes": {
+      "Package": "shinythemes",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Title": "Themes for Shiny",
+      "Authors@R": "c( person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"), person(family = \"RStudio\", role = \"cph\"), person(\"Thomas\", \"Park\", role = c(\"ctb\", \"cph\"), comment = \"Bootswatch themes\"), person(\"Lukasz\", \"Dziedzic\", role = c(\"ctb\", \"cph\"), comment = \"Lato font\"), person(\"Nathan\", \"Willis\", role = c(\"ctb\", \"cph\"), comment = \"News Cycle font\"), person(family = \"Google Corporation\", role = c(\"ctb\", \"cph\"), comment = \"Open Sans and Roboto fonts\"), person(\"Matt\", \"McInerney\", role = c(\"ctb\", \"cph\"), comment = \"Raleway font\"), person(family = \"Adobe Systems Incorporated\", role = c(\"ctb\", \"cph\"), comment = \"Source Sans Pro font\"), person(family = \"Canonical Ltd\", role = c(\"ctb\", \"cph\"), comment = \"Ubuntu font\") )",
+      "Description": "Themes for use with Shiny. Includes several Bootstrap themes from <https://bootswatch.com/>, which are packaged for use with Shiny applications.",
+      "Depends": [
+        "R (>= 3.0.0)"
+      ],
+      "Imports": [
+        "shiny (>= 0.11)"
+      ],
+      "URL": "https://rstudio.github.io/shinythemes/",
+      "License": "GPL-3 | file LICENSE",
+      "RoxygenNote": "7.1.1",
+      "NeedsCompilation": "no",
+      "Author": "Winston Chang [aut, cre], RStudio [cph], Thomas Park [ctb, cph] (Bootswatch themes), Lukasz Dziedzic [ctb, cph] (Lato font), Nathan Willis [ctb, cph] (News Cycle font), Google Corporation [ctb, cph] (Open Sans and Roboto fonts), Matt McInerney [ctb, cph] (Raleway font), Adobe Systems Incorporated [ctb, cph] (Source Sans Pro font), Canonical Ltd [ctb, cph] (Ubuntu font)",
+      "Maintainer": "Winston Chang <winston@rstudio.com>",
       "Repository": "CRAN"
     },
     "snow": {
