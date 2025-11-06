@@ -1,6 +1,5 @@
 library(CytoPipeline)
 
-# raw data
 # Halen we uit de CytoPipeline package
 # output files
 workDir <- suppressMessages(base::tempdir())
