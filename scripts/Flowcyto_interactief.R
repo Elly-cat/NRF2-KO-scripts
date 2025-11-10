@@ -77,12 +77,12 @@ plot(gs) # we kunnen de gating stappen plotten
 autoplot(gs[[2]], bins = 255) # dit is een makkelijke manier om alle te plotten
 
 # handmatig kan ook
-gg_root <- ggcyto(gs[[2]], aes("FSC-A", "SSC-A"), subset = "root") +
+ggcyto(gs[[2]], aes("FSC-A", "SSC-A"), subset = "root") +
   geom_point(aes(alpha = 0.5)) + # als je stippen wilt
   geom_gate("Cells") + # de gate zelf
   geom_stats() # percentage van de gate
 
-gg_Cells <- ggcyto(gs[[2]], aes("FSC-A", "FSC-H"), subset = "Cells") +
+ggcyto(gs[[2]], aes("FSC-A", "FSC-H"), subset = "Cells") +
   geom_hex(bins = 255) +
   geom_gate("Single Cells") # de gate zelf
   
