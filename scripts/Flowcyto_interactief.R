@@ -1,3 +1,4 @@
+renv::restore()
 # instaleer de propere lib, want er is geen CRAN repo.
 library(devtools)
 devtools::install_github("gfinak/cytoRSuite")
