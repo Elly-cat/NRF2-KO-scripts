@@ -87,3 +87,16 @@ ggcyto(gs[[2]], aes("FSC-A", "FSC-H"), subset = "Cells") +
   geom_hex(bins = 255) +
   geom_gate("Single Cells") # de gate zelf
   
+### Grid meerdere plots samen ###
+res <- autoplot(gs[[1]])
+class(res)
+
+# arrange as one-row
+gt <- ggcyto_arrange(res, nrow = 1)
+gt
+
+# doe hetzelfde voor de tweede sample
+gt2 <- ggcyto_arrange(autoplot(gs[[2]]), nrow = 1)
+
+gt3 <- gtable_rbind(gt, gt2)
+plot(gt3)
